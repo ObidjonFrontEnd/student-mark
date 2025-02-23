@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>kundalik.nj</title>
+	<link rel="stylesheet" href="output.css" />
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="relative">
+
+
+	<section id="teacherBody" class="relative duration-[1s] bg-white min-h-[100vh] shadow-2xl" >
+		<header>
+			<nav class="w-full flex justify-center h-[100px] items-center gap-[10px] text-[30px] font-[800]">
+				<button id="teachBtn" class="hover:text-blue-500 duration-[0.3s]">Techers</button>
+				/
+				<button id="studentBtn" class="hover:text-blue-500 duration-[0.3s]">Students</button>
+			</nav>
+		</header>
+
+		<form id="teacherForm" class="flex flex-col gap-[20px] items-center ">
+
+			<div class="relative w-[300px]">
+				<input type="text" id="name" placeholder=" "
+					class="peer w-full border border-gray-300 rounded-lg p-2 pt-5 transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+
+				<label id="forName" for="name"
+					class="absolute left-3 top-0 -translate-y-1/2  px-[20px] text-blue-400 text-sm transition-all duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:-translate-y-1/2 peer-focus:text-blue-500 peer-focus:top-0 peer-focus:text-sm bg-white">
+					Please enter the Name
+				</label>
+			</div>
+
+			<div class="relative w-[300px]">
+				<input type="text" id="surName" placeholder=" "
+					class="peer w-full border border-gray-300 rounded-lg p-2 pt-5 transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+
+				<label id="forSurName" for="surName"
+					class="absolute left-3 top-0 -translate-y-1/2  px-[20px] text-blue-400 text-sm transition-all duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:-translate-y-1/2 peer-focus:top-0 peer-focus:text-blue-400 peer-focus:text-sm bg-white">
+					Please enter the Surname
+				</label>
+			</div>
+
+			
+
+			<div class="relative w-[300px]">
+				<button class="w-full bg-blue-400 rounded-xl py-[15px] duration-[1s] hover:bg-amber-500 text-[20px] text-[white] font-[900]">
+					 Sent
+				</button>
+			</div>
+		</form>
+
+	</section>
+
+	
+
+	<main id="students" class="absolute top-0 left-0  min-h-[100vh] w-[100%] bg-white duration-[1.5s] translate-x-[-100%] scale-[0.9] shadow-2xl">
+		<header>
+			<nav class="w-full flex justify-center h-[100px] items-center gap-[10px] text-[30px] font-[800]">
+				<button id="teachBtn1" class="hover:text-blue-500 duration-[0.3s]">Techers</button>
+				/
+				<button id="studentBtn1" class="hover:text-blue-500 duration-[0.3s]">Students</button>
+			</nav>
+		</header>
+
+		<table id="studentsTable" class="w-[95%] mx-auto px-[20px] py-[20px] rounded-[30px]  border-solid border-black border-[1px] overflow-hidden">
+
+		</table>
+
+		<form action="" id="addBallForm" class="flex flex-col gap-[20px] w-[325px] items-center justify-center h-[300px] fixed inset-[0] top-[25%] bg-white  mx-auto rounded-[20px] scale-0 duration-[1s] shadow-xl " >
+			<div class="relative w-[300px]">
+				<input type="text" id="ball" placeholder=" " required
+					class="peer w-full border border-gray-300 rounded-lg p-2 pt-5 transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+
+				<label for="ball"
+					class="absolute left-3 top-0 -translate-y-1/2  px-[20px] text-blue-400 text-sm transition-all duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:-translate-y-1/2 peer-focus:top-0 peer-focus:text-blue-400 peer-focus:text-sm bg-white">
+					Please enter the grade
+				</label>
+			</div>
+			<div class="relative w-[300px]">
+				<button class="w-full bg-blue-400 rounded-xl py-[15px] duration-[1s] hover:bg-amber-500 text-[20px] text-[white] font-[900]">
+					 Sent
+				</button>
+			</div>
+
+			<button type="button" onclick="openClose()" class="rotate-[45deg] text-[30px] text-red-600 absolute top-[20px] right-[20px]">
+				<i class='bx bx-plus-medical'></i>
+			</button>
+		</form>
+
+	</main>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
