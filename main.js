@@ -71,7 +71,7 @@ function read() {
 				<td class ="mx-auto text-center p-[10px] bg-[#B5B8B1]  border-black border-[1px]">${obj.surname}</td>
 				<td class ="mx-auto text-center p-[10px] bg-[#FDD9B5] border-black border-[1px]">${obj.ball}</td>
 				<td class ="mx-auto text-center p-[10px] bg-[#B5B8B1] border-black border-[1px]">${obj.date}</td>
-				<td class ="mx-auto text-center p-[10px] bg-[#FDD9B5] border-black border-[1px]"><button class='text-[30px] text-green-400' id="btn" onclick="openClose(${index})"><i class='bx bx-plus-medical'></i></button></td>
+				<td class ="mx-auto text-center p-[10px] bg-[#FDD9B5] border-black border-[1px]"><button class='text-[20px] text-green-400' id="btn" onclick="openClose(${index})"><i class='bx bx-plus-medical'></i></button></td>
 			</tr>
 		`
 	})
